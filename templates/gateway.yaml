@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: {{ include "test-nodejs.fullname" . }}
+spec:
+  selector:
+    istio:  {{ .Values.gateway.istioName }}
+  servers:
+  - hosts:
+    - '*'
+    port:
+      name: {{ printf "http-%s" .Values.gateway.name }}
+      number: 80
+      protocol: HTTP
