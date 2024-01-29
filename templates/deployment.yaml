@@ -22,6 +22,9 @@ spec:
         {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
+    {{- with .Values.strategy }}
+    strategy:
+      {{- toYaml . | nindent 6 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
