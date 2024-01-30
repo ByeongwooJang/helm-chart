@@ -20,6 +20,9 @@ strategy:
 
 imagePullSecrets: 
   - name: dockerconfigjson
+secretValues:
+  - value: eyJhdXRocyI6eyJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOnsidXNlcm5hbWUiOiIxMDAwMzIyIiwicGFzc3dvcmQiOiJkY2tyX3BhdF9oaTFtMnlOMkFVNnJ5RDJ5UlF6UVhpNGNqbTgiLCJlbWFpbCI6ImJ3amFuZ0BvbmVzdG9yZWNvcnAuY29tIiwiYXV0aCI6Ik1UQXdNRE15TWpwa1kydHlYM0JoZEY5b2FURnRNbmxPTWtGVk5uSjVSREo1VWxGNlVWaHBOR05xYlRnPSJ9fX0=
+
 nameOverride: ""
 fullnameOverride: ""
 
